@@ -93,10 +93,11 @@ namespace crud_libreria_web.FRONTEND
                             //RECUPERAMOS LOS DATOS
                             int id_libro = Convert.ToInt32(rows.Cells[1].Text);
                             string titulo = rows.Cells[2].Text;
-                            
 
-                            
-                           
+                            //LE PASAMOS EL PARAMTERO DELA FORMA QUERYSTRING
+                            //nombrePagina ? nombreVariable = valor que le pasamos al otro form
+                            Response.Redirect("Fr_modificar.aspx?titulo=" + titulo);
+
                         }
                     }
 

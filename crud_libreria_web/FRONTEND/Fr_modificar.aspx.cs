@@ -12,6 +12,9 @@ namespace crud_libreria_web.FRONTEND
         
         protected void Page_Load(object sender, EventArgs e)
         {
+            //AQUI RECUPERAMOS EL DATO Y LO PASAMOS A NUESTROS CAMPOS 
+            string titu = Request.QueryString.Get("titulo");
+            txtTitulo.Text = titu;
         }
 
         protected void btn_regresar_Click(object sender, EventArgs e)
@@ -23,9 +26,6 @@ namespace crud_libreria_web.FRONTEND
         {
 
         }
-        public void datos_del_libro(string titu)
-        {
-            txtTitulo.Text = titu;
-        }
+       
     }
 }
