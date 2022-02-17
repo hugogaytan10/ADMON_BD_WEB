@@ -21,7 +21,8 @@ namespace crud_libreria_web.FRONTEND
             cl_libros obj = new cl_libros();
             obj.isbn = txtISBN.Text;
             obj.titulo = txtTITULO.Text;
-            obj.numero_edicion = Int32.Parse(txtEDICION.Text);
+            obj.numero_edicion = Convert.ToInt32(txtEDICION.Text);
+            obj.anio_publicacion = Convert.ToInt32(txtAÑO.Text);
             obj.nombre_autores = txtAUTOR.Text;
             obj.pais_publicacion = txtPAIS.Text;
             obj.sinopsis = txtSINOPSIS.Text;
