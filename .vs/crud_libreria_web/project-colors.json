@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3c978e53-2669-4492-9370-3010c3666551": {
+      "ProjectGuid": "3c978e53-2669-4492-9370-3010c3666551",
+      "DisplayName": "crud_libreria_web",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
