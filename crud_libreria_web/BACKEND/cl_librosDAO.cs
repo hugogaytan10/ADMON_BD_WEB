@@ -32,7 +32,7 @@ namespace crud_libreria_web.BACKEND
                     aux.sinopsis = rows[7].ToString();
                     aux.carrera = rows[8].ToString();
                     aux.materia = rows[9].ToString();
-
+                    
                     lista.Add(aux);
                 }
                 return lista;
@@ -81,7 +81,21 @@ namespace crud_libreria_web.BACKEND
         {
             try
             {
+                string update = "UPDATE libros set isbn =@Isbn, titulo= @Titulo, numero_edicion= @edicion," +
+                    " anio_publicacion = @anio, nombre_autores = @autores, pais_publicacion = @pais, sinopsis = @Sinopsis, " +
+                    " carrera = @Carrera, materia = @Materia where id = @ID; ";
+                SqlCommand comando = new SqlCommand(update);
+                comando.Parameters.AddWithValue("Isbn",libro.isbn);
+                comando.Parameters.AddWithValue("Titulo", libro.titulo);
+                comando.Parameters.AddWithValue("edicion", libro.numero_edicion);
+                comando.Parameters.AddWithValue("anio", libro.anio_publicacion);
+                comando.Parameters.AddWithValue("autores", libro.nombre_autores);
+                comando.Parameters.AddWithValue("pais", libro.pais_publicacion);
+                comando.Parameters.AddWithValue("Sinopsis", libro.sinopsis);
+                comando.Parameters.AddWithValue("Carrera", libro.carrera);
+                comando.Parameters.AddWithValue("Materia", libro.materia);
 
+                cl_conexion.ejecutarSentencia(comando);
                 return true;
             }
             catch (Exception ex) { return false; }

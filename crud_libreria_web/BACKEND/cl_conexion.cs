@@ -15,7 +15,8 @@ namespace crud_libreria_web.BACKEND
         public static bool conectar()
         {
 
-            string conexion = "server = localhost; database = libreria; " + "uid = sa; pwd = TUCOLA.125@;";
+            //string conexion = "server = localhost; database = libreria; " + "uid = sa; pwd = TUCOLA.125@;";
+            string conexion = "server = localhost; database = libreria; " + "uid = sa; pwd =Futbol.9;";
             
             
             try

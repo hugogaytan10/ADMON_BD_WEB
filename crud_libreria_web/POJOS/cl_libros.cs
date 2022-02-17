@@ -17,6 +17,7 @@ namespace crud_libreria_web.POJOS
         public string sinopsis { get; set; }
         public string carrera { get; set; }
         public string materia { get; set; }
+        
 
 
         

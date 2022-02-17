@@ -10,9 +10,17 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:GridView ID="gvMain" runat="server">
-            </asp:GridView>
+            <asp:GridView ID="gvMain" runat="server" OnSelectedIndexChanged="gvMain_SelectedIndexChanged">
+                <Columns>
+                    <asp:TemplateField>
+                        <ItemTemplate>
+                            <asp:CheckBox ID="checkLista" runat ="server" />
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                </Columns>
+             </asp:GridView>
             <asp:Button ID="btn_mostar" runat="server" OnClick="btn_mostar_Click" Text="MOSTRAR" />
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="ELIMINAR" />
         </div>
     </form>
 </body>
