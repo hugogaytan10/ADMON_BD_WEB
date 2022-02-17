@@ -116,6 +116,8 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="FRONTEND\Fr_agregar.aspx" />
+    <Content Include="FRONTEND\Fr_modificar.aspx" />
     <Content Include="FRONTEND\index.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -186,6 +188,20 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FRONTEND\Fr_agregar.aspx.cs">
+      <DependentUpon>Fr_agregar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FRONTEND\Fr_agregar.aspx.designer.cs">
+      <DependentUpon>Fr_agregar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FRONTEND\Fr_modificar.aspx.cs">
+      <DependentUpon>Fr_modificar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FRONTEND\Fr_modificar.aspx.designer.cs">
+      <DependentUpon>Fr_modificar.aspx</DependentUpon>
     </Compile>
     <Compile Include="FRONTEND\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>

@@ -11,7 +11,7 @@ namespace crud_libreria_web.FRONTEND
 {
 
 
-    public partial class index
+    public partial class Fr_modificar
     {
 
         /// <summary>
@@ -24,48 +24,21 @@ namespace crud_libreria_web.FRONTEND
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control gvMain.
+        /// Control btn_regresar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvMain;
+        protected global::System.Web.UI.WebControls.Button btn_regresar;
 
         /// <summary>
-        /// Control btn_mostar.
+        /// Control txtTitulo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_mostar;
-
-        /// <summary>
-        /// Control btn_eliminar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_eliminar;
-
-        /// <summary>
-        /// Control btn_agegar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_agegar;
-
-        /// <summary>
-        /// Control btn_modificar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_modificar;
+        protected global::System.Web.UI.WebControls.TextBox txtTitulo;
     }
 }

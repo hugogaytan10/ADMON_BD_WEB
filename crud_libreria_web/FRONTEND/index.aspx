@@ -20,7 +20,9 @@
                 </Columns>
              </asp:GridView>
             <asp:Button ID="btn_mostar" runat="server" OnClick="btn_mostar_Click" Text="MOSTRAR" />
-            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="ELIMINAR" />
+            <asp:Button ID="btn_eliminar" runat="server" OnClick="Button1_Click" Text="ELIMINAR" />
+            <asp:Button ID="btn_agegar" runat="server" OnClick="btn_agegar_Click" Text="AGREGAR" />
+            <asp:Button ID="btn_modificar" runat="server" OnClick="btn_modificar_Click" Text="MODIFICAR" />
         </div>
     </form>
 </body>

@@ -69,5 +69,43 @@ namespace crud_libreria_web.FRONTEND
                 }
             }
         }
+
+        protected void btn_agegar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Fr_agregar.aspx");
+        }
+
+        protected void btn_modificar_Click(object sender, EventArgs e)
+        {
+
+            //CHECAMOS CUAL QUIERE MODIFICAR TOMARÁ EL PRIMERO QUE SELECCIONE
+            foreach (GridViewRow rows in gvMain.Rows)
+            {
+                if (rows.RowType == DataControlRowType.DataRow)
+                {
+                    //BUSCAMOS NUESTRO CHECK DENTRO DEL GRID
+                    CheckBox check = (rows.Cells[0].FindControl("checklista") as CheckBox);
+
+                    if (check != null)
+                    {
+                        if (check.Checked)
+                        {
+                            //RECUPERAMOS LOS DATOS
+                            int id_libro = Convert.ToInt32(rows.Cells[1].Text);
+                            string titulo = rows.Cells[2].Text;
+                            
+
+                            
+                           
+                        }
+                    }
+
+
+                }
+            }
+
+
+            
+        }
     }
 }
