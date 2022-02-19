@@ -16,7 +16,7 @@ namespace crud_libreria_web.BACKEND
         {
 
             //string conexion = "server = localhost; database = libreria; " + "uid = sa; pwd = TUCOLA.125@;";
-            string conexion = "server = localhost; database = libreria; " + "uid = sa; pwd =Futbol.9";
+            string conexion = "server = localhost; database = libros; " + "uid = sa; pwd =reptiles";
             
             
             try
