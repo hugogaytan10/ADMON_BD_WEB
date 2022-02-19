@@ -63,16 +63,81 @@ namespace crud_libreria_web.FRONTEND
 
         protected void btn_modificar_Click(object sender, EventArgs e)
         {
+            string titulo;
+            string sinopsis;
+            string pais;
+            string materia;
+            string isbn;
+            string edicion;
+            string carrera;
+            string autores;
+            string anio;
+
             //RECUPERAMOS LOS DATOS A MODIFICAR
-            string titulo = txtTITULO.Text;
-            string sinopsis = txtSINOPSIS.Text;
-            string pais = txtPAIS.Text;
-            string materia = txtMATERIA.Text;
-            string isbn = txtIsbnNuevo.Text;
-            string edicion = txtEDICION.Text;
-            string carrera = txtCARRERA.Text;
-            string autores = txtAUTOR.Text;
-            string anio = txtANIO.Text;
+            if (txtTitutloNUEVO.Text.Equals("")) {
+                titulo = txtTITULO.Text;
+
+            } else {
+                titulo = txtTitutloNUEVO.Text;
+            }
+
+            if (txtSipnosisNUEVO.Text.Equals("")) {
+                sinopsis = txtSINOPSIS.Text;
+
+            } else {
+                sinopsis = txtSipnosisNUEVO.Text;
+            }
+
+            if (txtPaisNUEVO.Text.Equals("")) {
+                pais = txtPAIS.Text;
+
+            } else {
+                pais = txtPaisNUEVO.Text;
+            }
+
+            if (txtMateriaNUEVO.Text.Equals("")) {
+                materia = txtMATERIA.Text;
+
+            } else {
+                materia = txtMateriaNUEVO.Text;
+            }
+
+            if (txtIsbnNUEVO.Text.Equals("")) {
+                isbn = txtISBN.Text;
+
+            } else {
+                isbn = txtIsbnNUEVO.Text;
+            }
+
+            if (txtEdicionNUEVO.Text.Equals("")) {
+                edicion = txtEDICION.Text;
+
+            } else {
+                edicion = txtEdicionNUEVO.Text;
+            }
+
+            if (txtCarrearNUEVO.Text.Equals("")) {
+                carrera = txtCARRERA.Text;
+
+            } else {
+                carrera = txtCarrearNUEVO.Text;
+            }
+
+            if (txtAutoresNUEVO.Text.Equals("")) {
+                autores = txtAUTOR.Text;
+
+            } else {
+                autores = txtAutoresNUEVO.Text;
+            }
+
+            if (txtAnioNUEVO.Text.Equals("")) {
+                anio = txtANIO.Text;
+
+            } else {
+                anio = txtAnioNUEVO.Text;
+            }
+
+            
             //HACEMOS EL OBJETO DE LIBRO
             cl_libros libro = new cl_libros();
             libro.id_libro = id_libro;
@@ -91,7 +156,7 @@ namespace crud_libreria_web.FRONTEND
             {
                 dao.actualizar(libro);
             }
-            catch (Exception ex) { }
+            catch (Exception) { }
 
 
         }
