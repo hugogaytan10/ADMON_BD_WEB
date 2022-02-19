@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+<link rel ="stylesheet"  href ="estilos.css" type ="text/css"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
 </head>
@@ -52,8 +53,8 @@
 
         
         
-        <asp:Button ID="btn_regrear" runat="server" OnClick="btn_regrear_Click" Text="REGRESAR" />
-        <asp:Button ID="btn_Agregar_FrAgregar" runat="server" OnClick="btn_agregar_Click" Text="Agregar" />
+        <asp:Button class= "botones" ID="btn_regrear" runat="server" OnClick="btn_regrear_Click" Text="REGRESAR" />
+        <asp:Button class= "botones" ID="btn_Agregar_FrAgregar" runat="server" OnClick="btn_agregar_Click" Text="AGREGAR" />
     </form>
 </body>
 </html>

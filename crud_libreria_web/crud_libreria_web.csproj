@@ -116,6 +116,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="FRONTEND\estilos.css" />
     <Content Include="FRONTEND\Fr_agregar.aspx" />
     <Content Include="FRONTEND\Fr_modificar.aspx" />
     <Content Include="FRONTEND\index.aspx" />

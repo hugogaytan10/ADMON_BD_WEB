@@ -27,13 +27,11 @@ namespace crud_libreria_web.FRONTEND
         {
             cl_librosDAO obj = new cl_librosDAO();
             gvMain.DataSource = obj.mostrar_todo();
+            
             gvMain.DataBind();
         }
 
-        protected void gvMain_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+        
 
         protected void Button1_Click(object sender, EventArgs e)
         {
@@ -57,6 +55,11 @@ namespace crud_libreria_web.FRONTEND
 
                             //procedemos a liminarlo
                             cl_librosDAO dao = new cl_librosDAO();
+
+                            //cambiamos de color lo seleccionado
+                            rows.Cells[0].BackColor = Color.FromArgb(250, 0, 0);
+                            rows.Cells[1].BackColor = Color.FromArgb(250, 0, 0);
+                            rows.Cells[2].BackColor = Color.FromArgb(250, 0, 0);
                             if (dao.eliminar(aux))
                             {
                                 gvMain.DataSource = dao.mostrar_todo();
@@ -91,12 +94,31 @@ namespace crud_libreria_web.FRONTEND
                         if (check.Checked)
                         {
                             //RECUPERAMOS LOS DATOS
-                            int id_libro = Convert.ToInt32(rows.Cells[1].Text);
-                            string titulo = rows.Cells[2].Text;
+                            string id_libro = rows.Cells[1].Text;
+                            string titulo = rows.Cells[3].Text;
+                            string isb = rows.Cells[2].Text;
+                            string numero_edicion = rows.Cells[4].Text;
+                            string anio_publicacion = rows.Cells[5].Text;
+                            string nombre_autores = rows.Cells[6].Text;
+                            string pais_publicacion = rows.Cells[7].Text;
+                            string sinopsis = rows.Cells[8].Text;
+                            string carrera = rows.Cells[9].Text;
+                            string materia = rows.Cells[10].Text;
 
                             //LE PASAMOS EL PARAMTERO DELA FORMA QUERYSTRING
                             //nombrePagina ? nombreVariable = valor que le pasamos al otro form
-                            Response.Redirect("Fr_modificar.aspx?titulo=" + titulo);
+                            Session["titu"] = titulo;
+                            Session["isb"] = isb;
+                            Session["numero_edicion"] = numero_edicion;
+                            Session["anio_publicacion"] = anio_publicacion;
+                            Session["autores"] = nombre_autores;
+                            Session["pais"] = pais_publicacion;
+                            Session["sinopsis"] = sinopsis;
+                            Session["carrera"] = carrera;
+                            Session["materia"] = materia;
+                            Session["id_li"] = id_libro;
+
+                            Response.Redirect("Fr_modificar.aspx");
 
                         }
                     }
@@ -108,5 +130,7 @@ namespace crud_libreria_web.FRONTEND
 
             
         }
+
+       
     }
 }

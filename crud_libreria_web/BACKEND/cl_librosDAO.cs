@@ -94,6 +94,7 @@ namespace crud_libreria_web.BACKEND
                 comando.Parameters.AddWithValue("Sinopsis", libro.sinopsis);
                 comando.Parameters.AddWithValue("Carrera", libro.carrera);
                 comando.Parameters.AddWithValue("Materia", libro.materia);
+                comando.Parameters.AddWithValue("ID", libro.id_libro);
 
                 cl_conexion.ejecutarSentencia(comando);
                 return true;
