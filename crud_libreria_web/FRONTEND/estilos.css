@@ -1,0 +1,81 @@
+﻿*{
+    background: rgb(10,14,56);
+}
+.botones {
+    padding: 2px 2px;
+    margin: 10px;
+    width: 150px;
+    border-radius: 20px;
+    background: rgb(32,160,34);
+    box-shadow: 1px 1px 1px 1px rgb(238,191,0,0.1);
+    text-align: center;
+    color: white;
+    float: left;
+}
+
+.botones:hover {
+    box-shadow: 0px 2px 0px 0px rgb(238,191,0);
+    cursor: pointer;
+}
+
+.grid_estilos {
+    margin: 100px 250px;
+    border: solid;
+    border-color: rgb(238,191,0);
+}
+.grid_estilos th {
+    background-color: rgb(32,130,34);
+    border: none;
+    width: 200px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 4px;
+    color: Black;
+    color: white;
+}
+.grid_estilos tr{
+    color: white;
+}
+
+.etiquetas {
+    width: 200px;
+    color: white;
+    font: 18px calibri;
+}
+
+.div_labels {
+    height: 500px;
+    width: 200px;
+    text-align: right;
+    float: left;
+}
+
+.contenedor {
+    height: 360px;
+    width: 50%;
+    position: absolute;
+    overflow: hidden;
+    top: 100px;
+    left: 30%;
+}
+
+.div_textBoxs {
+    float: left;
+}
+
+.espacio1 {
+    height: 10px;
+    width: 5px;
+    float: left;
+}
+
+.textBoxes{
+    background: rgb(91,91,91);
+    color: white;
+}
+
+.div{
+    float: left;
+}
+
